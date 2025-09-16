@@ -1,0 +1,40 @@
+{
+  "name": "bookstore-api-testing-workshop",
+  "version": "1.0.0",
+  "description": "Workshop exercise for learning unit and integration testing with GitHub Copilot",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:unit": "jest tests/unit",
+    "test:integration": "jest tests/integration"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "testing",
+    "jest",
+    "supertest",
+    "workshop"
+  ],
+  "author": "Workshop Instructor",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "supertest": "^6.3.3"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "coverageDirectory": "coverage",
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  }
+}
